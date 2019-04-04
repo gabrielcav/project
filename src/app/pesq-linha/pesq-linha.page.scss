@@ -1,0 +1,53 @@
+.welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  ion-toolbar {
+    //--background: rgb(0, 50, 250);
+    // --background: -webkit-linear-gradient(left top, #23538a 0%, #359bf4 100%);
+    // --background: -o-linear-gradient(bottom right, #23538a 0%, #359bf4 100%);
+    // --background: -moz-linear-gradient(bottom right, #23538a 0%, #359bf4 100%);
+    --background: linear-gradient(to top right, #23538a 0%, #359bf4 100%); 
+  }
+  
+  ion-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFF;
+  }
+  
+  .codPont {  
+    border: 1px solid rgb(202, 202, 202);
+    --placeholder-color: rgb(141, 140, 140);
+    font-weight: 400;
+    font-size: 16px;
+    --padding-start: 5px;
+  }
+  
+  .codPontInput {
+    padding: 10px;
+  }
+  
+  .searchIcon {
+    padding: 10px;
+    color: rgb(141, 140, 140);
+  }
+  
+  .codPontLabel {
+    font-weight: 400;
+    border: 1px solid rgb(202, 202, 202);
+    border-bottom: none;
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  .listLastSearch {
+    border: 1px solid rgb(202, 202, 202);
+  }
+  
+  ion-label.itemListLastSearch {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(141, 140, 140);
+  }

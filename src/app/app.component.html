@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-content class="side-menu-gradient">
+        <ion-row style="height: 5%"></ion-row>
+        <div class="profile-image">
+          <img src="/assets/user.jpg" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-center label-user">
+              <h5>BR Mobilidade</h5>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-list lines="none" background="none">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" class="side-menu-item">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-col>
+          <div class="label-item-adicionais">
+            Items Adicionais
+          </div>
+        </ion-col>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
